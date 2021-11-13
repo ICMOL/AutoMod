@@ -46,8 +46,13 @@ The most important notice during the search is: **Please DO NOT specify any vari
   <br>
 
 **Commands**
-- `java -jar AutoMod-v1.0.0-rc2.jar param-file-path pepXML-file-path`
-- `java -jar AutoMod-v1.0.0-rc2.jar D:\AM-param.yml D:\*.pepXML`
+- If the pepXML files are not in the same folder
+  > * `java -jar AutoMod.jar param-file-path pepXML-path1 pepXML-path2 pepXML-path3`
+- If the pepXML files are in the same folder
+  > * `java -jar AutoMod.jar param-file-path D:\*.pepXML`
+
+
+
 <br>
 
 **Output files**
