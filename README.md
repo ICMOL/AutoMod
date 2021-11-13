@@ -2,6 +2,9 @@
 
 
 ## How to Use
+
+AutoMod requires two input files, including _open search pepXML files_ and _a corresponding parameter file_.
+
 **Step 1.** Generate open search pepXML files using MSFragger
 
 
