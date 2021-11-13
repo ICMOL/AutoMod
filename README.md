@@ -50,8 +50,12 @@ There are two sections in the AutoMod parameter file, including the basic and th
 #### Commands
 - If the pepXML files are not in the same folder
   >  `java -jar AutoMod.jar param-file-path pepXML-path1 pepXML-path2 pepXML-path3`
+  >  e.g., `java -jar AutoMod.jar AutoMod.yml D:\test1.pepXML`
+
+
 - If the pepXML files are in the same folder
-  >  `java -jar AutoMod.jar param-file-path D:\*.pepXML`
+  >  `java -jar AutoMod.jar param-file-path folder-path\*.pepXML`
+  >  e.g., `java -jar AutoMod.jar AutoMod.yml D:\*.pepXML`
 
 
 
