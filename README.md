@@ -17,7 +17,7 @@ To generate the open search results, users can run MSFragger via the GUI (i.e., 
 
 The most important notice during the search is: **Please DO NOT specify any variable/fixed modficiations in the search parameters** (as shown in the figures below). This is because, as a modification is specified, its mass will be excluded from the mass difference and AutoMod can not detect it.   
 
-<img src="" height="40%" width="40%" title="FragPipe (open search)">
+<img src="https://github.com/ICMOL/AutoMod/blob/main/fig1.png" height="40%" width="40%" title="FragPipe (open search)">
 
 <br>
 
