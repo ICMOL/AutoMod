@@ -2,6 +2,13 @@
 
 
 ## How to Use
+**Step 1.** Generate open search pepXML files using MSFragger
+
+
+**Step 2.** Mine PTMs using AutoMod
+
+
+**Step 3.** Apply modification patterns in the closed search
 
 
 ## Frequently Asked Questions (FAQ)
