@@ -25,7 +25,7 @@ The most important notice during the search is: **Please DO NOT specify any vari
 
 - Parameters: There are two sections in the AutoMod parameter file, including the basic and the advanced. Users can specify the output file path, number of PTMs in a combination, and the number of exported patterns in the basic section. The advanced section provides 109 PTM candidates collected from UniProt, and users can costumize the PTM list by adding or deleting PTM candidates if necessary.
 
-<BASIC>
+BASIC
 
 |        Name         |  Default Value | Comments |
 |---------------------|----------------|------------------------------|
@@ -39,7 +39,7 @@ The most important notice during the search is: **Please DO NOT specify any vari
 | frag_site           | true           | use the suggested ptm sites in MSFragger open search results |
 
 
-<ADVANCED>
+ADVANCED
   Please follow the following format when adding new PTM candidates: **UniqueMass@AminoAcid**
   
   ptm:	-0.984016@ARNDCEQGHILKMFPSTWYV
