@@ -18,8 +18,6 @@ The most important notice during the search is: **Please DO NOT specify any vari
 
 <img src="https://github.com/ICMOL/AutoMod/blob/main/fig1.png" height="40%" width="40%" title="FragPipe (open search)">
 
-<br>
-
 ### Step 2. Mine PTMs using AutoMod
 
 **Parameters:** There are two sections in the AutoMod parameter file, including the basic and the advanced. Users can specify the output file path, number of PTMs in a combination, and the number of exported patterns in the basic section. The advanced section provides 109 PTM candidates collected from UniProt, and users can costumize the PTM list by adding or deleting PTM candidates if necessary.
@@ -37,7 +35,7 @@ The most important notice during the search is: **Please DO NOT specify any vari
 | min_match           | 10             | print out the patterns with the minimum match number |
 | frag_site           | true           | use the suggested ptm sites in MSFragger open search results |
 
-
+<br>
 
 - ADVANCED
 
@@ -48,12 +46,13 @@ The most important notice during the search is: **Please DO NOT specify any vari
   ptm:	-1.031634@K
   ptm:	-15.010899@S
   
-  
+  <br>
+
 - Output files:
 
 
 
-<br>
+
 
 ### Step 3. Apply modification patterns in closed searches
 
