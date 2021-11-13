@@ -24,6 +24,8 @@ The most important notice during the search is: **Please DO NOT specify any vari
 **Step 2.** Mine PTMs using AutoMod
 
 - Parameters
+
+
 | Name | Comments |
 |-------|:-----:|
 | output   |  the location of output files |
