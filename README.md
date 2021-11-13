@@ -26,11 +26,14 @@ The most important notice during the search is: **Please DO NOT specify any vari
 - Parameters
 
 
-| Name | Comments |
-|-------|:-----:|
-| output   |  the location of output files |
+|        Name          |      Default Value         | Comments |
+|----------------------|----------------------------|-----------------------------------------------------------------------------------------------------------|
+| output               |        D:\test             | the location of output files |
 | fragger_param_path   |  path to the MSFragger closed search parameter file  |
-| num_threads   |  number of threads used in the process. "-1" means that AutoMod will use (total number of threads - 1) in your computer for processing  |
+| num_threads          |  number of threads used in the process. "-1" means that AutoMod will use (total number of threads - 1) in your computer for processing  |
+| num_ptm_comb         |  maximum combination number of post-translational modification per peptide |
+| num_ptm_comb         |  maximum combination number of post-translational modification per peptide |
+| precursor_mass_tolerance       |  maximum combination number of post-translational modification per peptide |
 
 <br>
 
