@@ -6,7 +6,7 @@
 To mine the potential PTMs from open search results, AutoMod requires the pepXML files (from **open search**) as input files. Here we demonstrate how to generate the pepXML files (open search) using MSFragger, mine PTMs from the open search results using AutoMod, and apply the mined PTM patterns to closed searches.
 <br>
 
-**System Requirement**
+###System Requirement###
 
 - [Java SE Runtime Environment 15(or above)](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html) is required to be installed prior to use AutoMod. 
 <br>
