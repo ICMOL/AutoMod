@@ -23,6 +23,13 @@ The most important notice during the search is: **Please DO NOT specify any vari
 
 **Step 2.** Mine PTMs using AutoMod
 
+- Parameters
+| Name | Comments |
+|-------|:-----:|
+| output   |  the location of output files |
+| fragger_param_path   |  path to the MSFragger closed search parameter file  |
+| num_threads   |  number of threads used in the process. "-1" means that AutoMod will use (total number of threads - 1) in your computer for processing  |
+
 <br>
 
 **Step 3.** Apply modification patterns in closed searches
