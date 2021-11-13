@@ -23,17 +23,33 @@ The most important notice during the search is: **Please DO NOT specify any vari
 
 **Step 2.** Mine PTMs using AutoMod
 
-- Parameters
+- Parameters: There are two sections in the AutoMod parameter file, including the basic and the advanced. Users can specify the output file path, number of PTMs in a combination, and the number of exported patterns in the basic section. The advanced section provides 109 PTM candidates collected from UniProt, and users can costumize the PTM list by adding or deleting PTM candidates if necessary.
+
+<BASIC>
+
+|        Name         |  Default Value | Comments |
+|---------------------|----------------|------------------------------|
+| output              | D:\test        | the location of output files |
+| fragger_param_path  | (can be empty) | path to the MSFragger closed search parameter file  |
+| num_threads         | -1             | number of threads used in the process. "-1" means that AutoMod will use (total number of threads - 1) in your computer for processing  |
+| num_ptm_comb        |  4             | maximum combination number of post-translational modification per peptide |
+| precursor_mass_tolerance    |  20    | precursor mass tolaerance (unit: ppm) |
+| output_pattern_num  | 10             | export top N patterns based on the number of matches |
+| min_match           | 10             | print out the patterns with the minimum match number |
+| frag_site           | true           | use the suggested ptm sites in MSFragger open search results |
 
 
-|        Name          |      Default Value         | Comments |
-|----------------------|----------------------------|-----------------------------------------------------------------------------------------------------------|
-| output               |        D:\test             | the location of output files |
-| fragger_param_path   |  path to the MSFragger closed search parameter file  |
-| num_threads          |  number of threads used in the process. "-1" means that AutoMod will use (total number of threads - 1) in your computer for processing  |
-| num_ptm_comb         |  maximum combination number of post-translational modification per peptide |
-| num_ptm_comb         |  maximum combination number of post-translational modification per peptide |
-| precursor_mass_tolerance       |  maximum combination number of post-translational modification per peptide |
+<ADVANCED>
+  Please follow the following format when adding new PTM candidates: **UniqueMass@AminoAcid**
+  
+  ptm:	-0.984016@ARNDCEQGHILKMFPSTWYV
+  ptm:	-1.031634@K
+  ptm:	-15.010899@S
+  
+  
+- Output files:
+
+
 
 <br>
 
