@@ -3,9 +3,11 @@
 
 ## How to Use
 
-To mine potential PTMs from open search results, AutoMod requires the pepXML files (from open search) as input files. Here we demonstrate how to generate the pepXML files (open search) using MSFragger, mine PTMs from the open search results using AutoMod, and apply the mined PTM patterns for closed searches.
+To mine the potential PTMs from open search results, AutoMod requires the pepXML files (from **open search**) as input files. Here we demonstrate how to generate the pepXML files (open search) using MSFragger, mine PTMs from the open search results using AutoMod, and apply the mined PTM patterns to closed searches.
 
-**R**
+**System Requirement**
+
+. Please 
 
 **Step 1.** Generate open search pepXML files using MSFragger
 
