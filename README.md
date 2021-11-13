@@ -1,4 +1,7 @@
-## Introduction
+## How to Use
+
+
+## Frequently Asked Questions (FAQ)
 
 ### Preparing AutoMod
 - **Using FragPipe run open search**:
