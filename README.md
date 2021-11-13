@@ -14,7 +14,7 @@ To mine the potential PTMs from open search results, AutoMod requires the pepXML
 
 To generate the open search results, users can run MSFragger via the GUI (i.e., FragPipe) or the command-line. The detailed tutorials can be found at: https://github.com/Nesvilab/FragPipe and https://github.com/Nesvilab/MSFragger/wiki/Launching-MSFragger. 
 
-The most important notice during the search is: **Please DO NOT specify any variable/fixed modficiations in the search parameters** (as shown in the figures below). This is because, as a modification is specified, its mass will be excluded from the mass difference and AutoMod can not detect it.   
+The most important notice during the search is: **Please DO NOT specify any variable/fixed modficiations in the search parameters** (as shown in the figures below). This is because, as a modification is specified, its mass will be excluded from the mass difference and AutoMod cannot detect it.   
 
 <img src="https://github.com/ICMOL/AutoMod/blob/main/fig1.png" height="40%" width="40%" title="FragPipe (open search)">
 
@@ -22,7 +22,7 @@ The most important notice during the search is: **Please DO NOT specify any vari
 
 ### Parameters
 
-There are two sections in the AutoMod parameter file, including the basic and the advanced. Users can specify the output file path, number of PTMs in a combination, and the number of exported patterns in the basic section. The advanced section provides 109 PTM candidates collected from UniProt, and users can costumize the PTM list by adding or deleting PTM candidates if necessary.
+There are two sections in the AutoMod parameter file, including the basic and the advanced. Users can specify the output file path, number of PTMs in a combination, and the number of exported patterns in the basic section. The advanced section provides 109 PTM candidates collected from UniProt, and users can customize the PTM list by adding or deleting PTM candidates if necessary.
 
 - Basic parameters
 
@@ -32,7 +32,7 @@ There are two sections in the AutoMod parameter file, including the basic and th
 | fragger_param_path  | (can be empty) | path to the MSFragger closed search parameter file  |
 | num_threads         | -1             | number of threads used in the process. "-1" means that AutoMod will use (total number of threads - 1) in your computer for processing  |
 | num_ptm_comb        |  4             | maximum combination number of post-translational modification per peptide |
-| precursor_mass_tolerance    |  20    | precursor mass tolaerance (unit: ppm) |
+| precursor_mass_tolerance    |  20    | precursor mass tolerance (unit: ppm) |
 | output_pattern_num  | 10             | export top N patterns based on the number of matches |
 | min_match           | 10             | print out the patterns with the minimum match number |
 | frag_site           | true           | use the suggested ptm sites in MSFragger open search results |
@@ -56,11 +56,13 @@ There are two sections in the AutoMod parameter file, including the basic and th
 
 ### Output files
 
-AutoMod exports two output files, including details.tsv and mod-pattern.tsv. The details.tsv lists the mass differences and their corresponding PTMs with the confidence and support values, whereas the mod-pattern.tsv lists the top N PTM patterns which can be further apply for closed searches.
+AutoMod exports two output files, including details.tsv and mod-pattern.tsv. The details.tsv lists the mass differences and their corresponding PTMs with the confidence and support values, whereas the mod-pattern.tsv lists the top _N_ PTM patterns which can be further apply for closed searches.
 
-
+<br>
 
 ### Step 3. Apply modification patterns in closed searches
+
+As the recommended PTM patterns are obtained, one can easily apply them in closed searches with any search engine (including Sequest, MS Amanda, and MSFragger).
 
 <br>
 
