@@ -40,7 +40,7 @@ The most important notice during the search is: **Please DO NOT specify any vari
 - ADVANCED
 
 
-  Please follow the following format when adding new PTM candidates: **UniqueMass@AminoAcid**. For example, ptm:	ptm:	79.966331@DRCHSTY or 
+  Please follow the following format when adding new PTM candidates: **UniqueMass@AminoAcid**. For example, ptm:	79.966331@DRCHSTY or 
   ptm:	15.9949@M.
   
   <br>
