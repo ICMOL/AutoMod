@@ -1,5 +1,5 @@
 ## Introduction
-
+Protein database search is a common approach for shotgun proteomic data, where peptide identification mainly relies on matching tandem mass spectrometry (MS/MS) to peptide candidates using database search tools. Numerous database search engines have been proposed, e.g., Sequest, MSFragger, MSAmanda, and Mascot, but prior knowledge of post-translational modifications potentially exist in a sample is often required during the searches. Here we present a software tool, called AutoMod, which can automatically mine the possible PTMs and export recommended modification patterns for downstream closed searches.
 
 ## How to Use
 
@@ -58,7 +58,6 @@ There are two sections in the AutoMod parameter file, including the basic and th
 
 AutoMod exports two output files, including details.tsv and mod-pattern.tsv. The details.tsv lists the mass differences and their corresponding PTMs with the confidence and support values, whereas the mod-pattern.tsv lists the top N PTM patterns which can be further apply for closed searches.
 
-<br>
 
 
 ### Step 3. Apply modification patterns in closed searches
