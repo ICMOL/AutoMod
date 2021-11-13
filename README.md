@@ -1,7 +1,7 @@
-# Introduction
+## Introduction
 
 
-# How to Use
+## How to Use
 
 To mine the potential PTMs from open search results, AutoMod requires the pepXML files (from **open search**) as input files. Here we demonstrate how to generate the pepXML files (open search) using MSFragger, mine PTMs from the open search results using AutoMod, and apply the mined PTM patterns to closed searches.
 <br>
@@ -11,7 +11,7 @@ To mine the potential PTMs from open search results, AutoMod requires the pepXML
 - [Java SE Runtime Environment 15(or above)](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html) is required to be installed prior to use AutoMod. 
 <br>
 
-**Step 1.** Generate open search pepXML files using MSFragger
+### Step 1. Generate open search pepXML files using MSFragger
 
 To generate the open search results, users can run MSFragger via the GUI (i.e., FragPipe) or the command-line. The detailed tutorials can be found at: https://github.com/Nesvilab/FragPipe and https://github.com/Nesvilab/MSFragger/wiki/Launching-MSFragger. 
 
@@ -21,11 +21,11 @@ The most important notice during the search is: **Please DO NOT specify any vari
 
 <br>
 
-**Step 2.** Mine PTMs using AutoMod
+### Step 2. Mine PTMs using AutoMod
 
-- Parameters: There are two sections in the AutoMod parameter file, including the basic and the advanced. Users can specify the output file path, number of PTMs in a combination, and the number of exported patterns in the basic section. The advanced section provides 109 PTM candidates collected from UniProt, and users can costumize the PTM list by adding or deleting PTM candidates if necessary.
+**Parameters:** There are two sections in the AutoMod parameter file, including the basic and the advanced. Users can specify the output file path, number of PTMs in a combination, and the number of exported patterns in the basic section. The advanced section provides 109 PTM candidates collected from UniProt, and users can costumize the PTM list by adding or deleting PTM candidates if necessary.
 
-BASIC
+- BASIC
 
 |        Name         |  Default Value | Comments |
 |---------------------|----------------|------------------------------|
@@ -39,7 +39,10 @@ BASIC
 | frag_site           | true           | use the suggested ptm sites in MSFragger open search results |
 
 
-ADVANCED
+
+- ADVANCED
+
+
   Please follow the following format when adding new PTM candidates: **UniqueMass@AminoAcid**
   
   ptm:	-0.984016@ARNDCEQGHILKMFPSTWYV
@@ -53,11 +56,13 @@ ADVANCED
 
 <br>
 
-**Step 3.** Apply modification patterns in closed searches
+### Step 3. Apply modification patterns in closed searches
 
 <br>
 
 ## Frequently Asked Questions (FAQ)
+
+
 
 ### Preparing AutoMod
 - **Using FragPipe run open search**:
