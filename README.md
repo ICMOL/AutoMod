@@ -37,15 +37,9 @@ There are two sections in the AutoMod parameter file, including the basic and th
 | min_match           | 10             | print out the patterns with the minimum match number |
 | frag_site           | true           | use the suggested ptm sites in MSFragger open search results |
 
-<br>
-
 - Advanced parameters
-
-
   Please follow the following format when adding new PTM candidates: **UniqueMass@AminoAcid**. For example, ptm:	79.966331@DRCHSTY or 
   ptm:	15.9949@M.
-  
-  <br>
 
 #### Commands
 - If the pepXML files are not in the same folder
@@ -57,11 +51,9 @@ There are two sections in the AutoMod parameter file, including the basic and th
   >  `java -jar AutoMod.jar param-file-path folder-path\*.pepXML`
   >  e.g., `java -jar AutoMod.jar AutoMod.yml D:\*.pepXML`
 
-
-
-<br>
-
 #### Output files
+
+AutoMod exports two output files, including details.tsv and mod-pattern.tsv. The details.tsv lists the mass differences and their corresponding PTMs with the confidence and support values, whereas the mod-pattern.tsv lists the top N PTM patterns which can be further apply for closed searches.
 
 <br>
 
