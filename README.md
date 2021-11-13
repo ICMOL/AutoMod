@@ -20,7 +20,7 @@ The most important notice during the search is: **Please DO NOT specify any vari
 
 ### Step 2. Mine PTMs using AutoMod
 
-##### Parameters:
+#### Parameters:
 
 There are two sections in the AutoMod parameter file, including the basic and the advanced. Users can specify the output file path, number of PTMs in a combination, and the number of exported patterns in the basic section. The advanced section provides 109 PTM candidates collected from UniProt, and users can costumize the PTM list by adding or deleting PTM candidates if necessary.
 
@@ -47,7 +47,7 @@ There are two sections in the AutoMod parameter file, including the basic and th
   
   <br>
 
-##### Commands
+#### Commands
 - If the pepXML files are not in the same folder
   >  `java -jar AutoMod.jar param-file-path pepXML-path1 pepXML-path2 pepXML-path3`
 - If the pepXML files are in the same folder
@@ -57,7 +57,7 @@ There are two sections in the AutoMod parameter file, including the basic and th
 
 <br>
 
-##### Output files
+#### Output files
 
 <br>
 
