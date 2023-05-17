@@ -1,5 +1,5 @@
 ## Introduction
-Protein database search is a common approach for shotgun proteomic data, where peptide identification mainly relies on matching tandem mass spectrometry (MS/MS) to peptide candidates using database search tools. Numerous database search engines have been proposed, e.g., Sequest, MSFragger, MSAmanda, and Mascot, but prior knowledge of post-translational modifications potentially exist in a sample is often required during the searches. Here we present a software tool, called AutoMod, which can automatically mine the possible PTMs and export recommended modification patterns for downstream closed searches.
+Protein database search is a common approach for shotgun proteomics data, where peptide identification mainly relies on matching tandem mass spectrometry (MS/MS) to peptide candidates using database search tools. Numerous database search engines have been proposed, e.g., Sequest, MSFragger, MSAmanda, and Mascot, but prior knowledge of post-translational modifications potentially exist in a sample is often required during the searches. Here we present a software tool, called AutoMod, which can automatically mine the possible PTMs and export recommended modification patterns for downstream closed searches.
 
 ## How to Use
 
