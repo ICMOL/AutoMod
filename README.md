@@ -1,24 +1,24 @@
 ## Introduction
-Protein database search is a common approach for shotgun proteomics data, where peptide identification mainly relies on matching tandem mass spectrometry (MS/MS) to peptide candidates using database search tools. Numerous database search engines have been proposed, e.g., Sequest, MSFragger, MSAmanda, and Mascot, but prior knowledge of post-translational modifications potentially exist in a sample is often required during the searches. Here we present a software tool, called AutoMod, which can automatically mine the possible PTMs and export recommended modification patterns for downstream closed searches.
+Protein database search is a common approach for shotgun proteomics data, where peptide identification mainly relies on matching tandem mass spectrometry (MS/MS) with peptide candidates using database search tools. Numerous database search engines have been proposed, e.g., Sequest, MSFragger, MSAmanda, and Mascot, but prior knowledge of post-translational modifications (PTMs) potentially exist in a sample is often required during the searches. Here we present a software tool, called AutoMod, which can automatically detect possible PTMs and export recommended modification patterns for downstream closed searches.
 
 ## How to Use
 
-To mine the potential PTMs from open search results, AutoMod requires the pepXML files (from **open search**) as input files. Here we demonstrate how to generate the pepXML files (open search) using MSFragger, mine PTMs from the open search results using AutoMod, and apply the mined PTM patterns to closed searches.
+To detect potential PTMs from open search results, AutoMod requires the pepXML files obtained from **open (mass-tolerant) searches** as input files. Here we demonstrate how to generate the open search pepXML files using MSFragger, detect PTMs from the open search results using AutoMod, and apply the detected PTM combinations to downstream closed searches.
 <br>
 
 ### System Requirement
 
-- [Java SE Runtime Environment 15(or above)](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html) is required to be installed prior to use AutoMod. 
+- [Java SE Runtime Environment 8(or above)](https://www.oracle.com/tw/java/technologies/javase/javase8-archive-downloads.html) is required to be installed prior to use AutoMod. 
 
 ### Step 1. Generate open search pepXML files using MSFragger
 
-To generate the open search results, users can run MSFragger via the GUI (i.e., FragPipe) or the command-line. The detailed tutorials can be found at: https://github.com/Nesvilab/FragPipe and https://github.com/Nesvilab/MSFragger/wiki/Launching-MSFragger. 
+To generate the open search results, users can run MSFragger via FragPipe or the command-line. The detailed tutorials can be found at: https://github.com/Nesvilab/FragPipe and https://github.com/Nesvilab/MSFragger/wiki/Launching-MSFragger. 
 
 **Please DO NOT specify any variable/fixed modficiations in the search parameters** (as shown in the figures below), because, as a modification is specified, its mass will be excluded from the mass difference and AutoMod cannot detect it.   
 
 <img src="https://github.com/ICMOL/AutoMod/blob/main/fig1.png" height="40%" width="40%" title="FragPipe (open search)">
 
-### Step 2. Mine PTMs using AutoMod
+### Step 2. Detect PTMs using AutoMod
 
 ### Parameters
 
@@ -37,10 +37,9 @@ There are two sections in the AutoMod parameter file, including the basic and th
 | min_match           | 10             | print out the patterns with the minimum match number |
 | frag_site           | true           | use the suggested ptm sites in MSFragger open search results |
 
-- Advanced parameters
+- PTM candidates
   
-  Please follow the following format when adding new PTM candidates: **UniqueMass@AminoAcid**. For example, ptm:	79.966331@DRCHSTY or 
-  ptm:	15.9949@M.
+  Please follow the format when adding new PTM candidates: **UniqueMass@AminoAcid**. For example, ptm: 79.966331@DRCHSTY or ptm: 15.9949@M.
 
 ### Commands
 - If the pepXML files are not in the same folder
