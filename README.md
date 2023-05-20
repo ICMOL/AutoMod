@@ -42,16 +42,18 @@ There are two sections in the AutoMod parameter file, including the basic and th
   Please follow the format when adding new PTM candidates: **UniqueMass@AminoAcid**. For example, ptm: 79.966331@DRCHSTY or ptm: 15.9949@M.
 
 ### Commands
-- If the pepXML files are not in the same folder
-  >  `java -jar AutoMod.jar param-file-path pepXML-path1 pepXML-path2 pepXML-path3`
-  >    
-  >  e.g., `java -jar AutoMod.jar AutoMod.yml D:\test1.pepXML`
+- For a single pepXML file
+  > `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar path\AutoMod.yml path\pepXML`
+  > 
+  > e.g., `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar AutoMod.yml D:\test1.pepXML`
 
 
-- If the pepXML files are in the same folder
-  >  `java -jar AutoMod.jar param-file-path folder-path\*.pepXML`
-  >    
-  >  e.g., `java -jar AutoMod.jar AutoMod.yml D:\*.pepXML`
+- For multiple pepXML files
+  > `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar path\AutoMod.yml path\pepXML1 path\pepXML2 path\pepXML3`
+  > e.g., `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar AutoMod.yml test1.pepXML test2.pepXML test3.pepXML`
+  > 
+  > `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar param-file-path folder-path\*.pepXML`
+  > e.g., `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar AutoMod.yml D:\*.pepXML`
 
 ### Output files
 
@@ -61,7 +63,7 @@ AutoMod exports two output files, including details.tsv and mod-pattern.tsv. The
 
 ### Step 3. Apply modification patterns in closed searches
 
-As the recommended PTM patterns are obtained, one can easily apply them in closed searches with any search engine (including Sequest, MS Amanda, and MSFragger).
+As the recommended PTM patterns are obtained, one can easily use for closed searches with any search engine (including Sequest, MS Amanda, and MSFragger).
 
 <br>
 
