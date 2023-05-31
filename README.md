@@ -50,9 +50,11 @@ There are two sections in the AutoMod parameter file, including the basic and th
 
 - For multiple pepXML files
   > `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar path\AutoMod.yml path\pepXML1 path\pepXML2 path\pepXML3`
+  > 
   > e.g., `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar AutoMod.yml test1.pepXML test2.pepXML test3.pepXML`
   > 
   > `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar param-file-path folder-path\*.pepXML`
+  > 
   > e.g., `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar AutoMod.yml D:\*.pepXML`
 
 ### Output files
