@@ -60,7 +60,8 @@ There are two sections in the AutoMod parameter file, including the basic and th
 
 ### AutoMod in Proteome Discoverer
 To facilitate the use of AutoMod, we add the software tool into the MSFragger-PD node. Users can manipulate AutoMod via the parameter setting panel of Proteome Discoverer. It is worth noting that users do not have to specify variable modifications using the MSFragger(AutoMod) node.
-<img src="https://github.com/ICMOL/AutoMod/blob/main/fig2.png" height="40%" width="40%" title="MSFragger-PD node">
+
+<img src="https://github.com/ICMOL/AutoMod/blob/main/fig2.png" height="100%" width="100%" title="MSFragger-PD node">
 
 
 ### Output files
