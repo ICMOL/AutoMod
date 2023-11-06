@@ -70,7 +70,7 @@ As the recommended PTM patterns are obtained, one can easily use for closed sear
 
 <br>
 
-### AutoMod in Proteome Discoverer
+## AutoMod in Proteome Discoverer
 To facilitate the use of AutoMod, we add the software tool into the MSFragger-PD node. Users can manipulate AutoMod via the parameter setting panel of Proteome Discoverer. It is worth noting that users do not have to specify variable modifications using the MSFragger(AutoMod) node.
 
 <img src="https://github.com/ICMOL/AutoMod/blob/main/fig2.png" height="80%" width="80%" title="MSFragger-PD node">
