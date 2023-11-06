@@ -69,13 +69,6 @@ As the recommended PTM patterns are obtained, one can easily use for closed sear
 
 <br>
 
-
-## License
-
-A US patent has been filed for AutoMod (application number: 18142035). It is currently free for academic use. Please contact us (email: dr.chuiyin@gmail.com) if you intend to use the software tool for commercial purposes.
-
-<br>
-
 ## Frequently Asked Questions (FAQ)
 
 
