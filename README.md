@@ -58,12 +58,6 @@ There are two sections in the AutoMod parameter file, including the basic and th
   > e.g., `xjar.exe java --add-opens java.base/jdk.internal.loader=ALL-UNNAMED -jar AutoMod.jar AutoMod.yml D:\*.pepXML`
 
 
-### AutoMod in Proteome Discoverer
-To facilitate the use of AutoMod, we add the software tool into the MSFragger-PD node. Users can manipulate AutoMod via the parameter setting panel of Proteome Discoverer. It is worth noting that users do not have to specify variable modifications using the MSFragger(AutoMod) node.
-
-<img src="https://github.com/ICMOL/AutoMod/blob/main/fig2.png" height="80%" width="80%" title="MSFragger-PD node">
-
-
 ### Output files
 
 AutoMod exports two output files, including details.tsv and mod-pattern.tsv. The details.tsv lists the mass differences and their corresponding PTMs with the confidence and support values, whereas the mod-pattern.tsv lists the top _N_ PTM patterns which can be further apply for closed searches.
@@ -73,6 +67,13 @@ AutoMod exports two output files, including details.tsv and mod-pattern.tsv. The
 ### Step 3. Apply modification patterns in closed searches
 
 As the recommended PTM patterns are obtained, one can easily use for closed searches with any search engine (including Sequest, MS Amanda, and MSFragger).
+
+<br>
+
+### AutoMod in Proteome Discoverer
+To facilitate the use of AutoMod, we add the software tool into the MSFragger-PD node. Users can manipulate AutoMod via the parameter setting panel of Proteome Discoverer. It is worth noting that users do not have to specify variable modifications using the MSFragger(AutoMod) node.
+
+<img src="https://github.com/ICMOL/AutoMod/blob/main/fig2.png" height="80%" width="80%" title="MSFragger-PD node">
 
 <br>
 
